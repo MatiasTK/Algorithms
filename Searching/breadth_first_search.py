@@ -13,20 +13,21 @@ class Graph:
     def remove_edge(self, edge):
         del self.graph[edge]
 
-    def visit_nodes_dfs(self, vertex, visited):
-        visited.add(vertex)
-        print(f"Se visito al vertice {vertex} y se lo agrego a visitados")
+    def bfs(self, initial_vertex=0):
+        visited = set()
+        queue = []
 
-        for neighbour in self.graph[vertex]:
-            if neighbour not in visited:
-                self.visit_nodes_dfs(neighbour, visited)
+        queue.append(initial_vertex)
+        visited.add(initial_vertex)
 
-    def dfs(self, initial_vertex=0):
-        visited = set()  # No va a haber duplicados en los visitados
+        while queue:  # Mientras que haya elementos en la cola
+            new_vertex = queue.pop(0)
+            print(f"Se visitará el vertice {new_vertex}")
 
-        self.visit_nodes_dfs(initial_vertex, visited)
-
-        print(f"Los vertices visitados fueron: {visited}")
+            for neighbour in self.graph[new_vertex]:
+                if neighbour not in visited:
+                    queue.append(neighbour)
+                    visited.add(neighbour)
 
     def __str__(self) -> str:
         return f"{dict(self.graph)}"
@@ -49,7 +50,7 @@ g.add_edge(3, 1)
 g.add_edge(3, 7)
 g.add_edge(7, 3)
 
-g.dfs(2)
+g.bfs(2)
 
 G = nx.Graph(dict(g.graph))
 nx.draw_networkx(G)
