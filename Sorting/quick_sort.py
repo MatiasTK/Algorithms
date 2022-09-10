@@ -60,7 +60,7 @@ random_array = []
 for index in range(0, 10):
     random_array.append(random.randint(0, 100))
 
-random_array_copy = random_array.copy()
+random_array_copy = [3, 7, 8, 5, 2, 1, 9, 5, 4]
 
 print("Unsorted array:", random_array)
 
