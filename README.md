@@ -1,6 +1,21 @@
 # Algoritmos
 
-Recreación de los algoritmos mas populares y utilizados, hechos y explicados en python!
+_Recreación de los algoritmos mas populares y utilizados, hechos y explicados en python!_
+
+### Requisitos
+
+- Python 3.10
+- NetworkX (Visualización de gráficos)
+- Matplotlib (Visualización de gráficos)
+
+### Notas
+
+- La utilización de módulos de terceros networkX y matplotlib no son necesarios para el funcionamiento del código por lo tanto estos pueden ser removidos, sin embargo estos sirven para darnos una ayuda visual sobre el grafo.
+- Las complejidades indicadas en este archivo siempre son teniendo en cuenta los peores casos de los algoritmos.
+
+### Gráfico de complejidad
+
+![Gráfico complejidad](https://miro.medium.com/max/1400/1*5ZLci3SuR0zM_QlZOADv8Q.jpeg)
 
 ## Algoritmos de búsqueda
 
@@ -130,12 +145,3 @@ En esta demostración podemos ver como se aplica heapify para luego aplicar heap
 - [Comparación de Sorts visualizador online](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html)
 - [Video comparativa entre sorts](https://www.youtube.com/watch?v=ZZuD6iUe3Pc)
 - [Articulo Wikipedia comparación entre algoritmos](https://en.wikipedia.org/wiki/Sorting_algorithm#Comparison_of_algorithms)
-
-### Gráfico de complejidad
-
-![Gráfico complejidad](https://miro.medium.com/max/1400/1*5ZLci3SuR0zM_QlZOADv8Q.jpeg)
-
-## Notas
-
-- La utilización de módulos de terceros networkX y matplotlib no son necesarios para el funcionamiento del código por lo tanto estos pueden ser removidos, sin embargo estos sirven para darnos una ayuda visual sobre el grafo.
-- Las complejidades indicadas en este archivo siempre son teniendo en cuenta los peores casos de los algoritmos.
